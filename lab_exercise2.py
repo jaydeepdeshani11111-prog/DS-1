@@ -6,6 +6,7 @@ print("Highest:", np.max(marks))
 print("Lowest:", np.min(marks))
 
 #2.supermarket sales.
+import numpy as np
 sales = np.array([1200, 1500, 1100, 1800, 1700, 2000, 1600])
 print("Total Sales:", np.sum(sales))
 print("Average Sales:", np.mean(sales))
