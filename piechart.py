@@ -1,12 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
-df = pd.read_csv("sales_data.csv")
-
-plt.pie(df["Sales"],
-labels=df["Month"],
-autopct='%1.1f%%')
-
-plt.title("Monthly Sales Distribution")
-
+df=pd.read_csv("brandsales.csv")
+plt.pie(df["Units Sold"],
+    labels=df["Brand"],
+    autopct='%1.2f%%'
+        )
+plt.title("smartphone sales distribution.")   
 plt.show()
